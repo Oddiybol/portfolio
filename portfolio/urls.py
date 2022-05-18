@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import homepage
+from main.views import homepage, sendContact
 # from django.cont.urls.static import static
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', homepage,name='homepage'),
+    path('sendContact/',sendContact, name='sendContact'),
+    path('admin/', admin.site.urls),
 ]
