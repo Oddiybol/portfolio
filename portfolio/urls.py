@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main.views import homepage
+# from django.cont.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homepage', homepage,name='homepage'),
+    path('', homepage,name='homepage'),
 ]
